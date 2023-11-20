@@ -101,7 +101,6 @@ public class ArrrayTest {
 		String[] c = new String[3];
 		List<String> strList = new ArrayList<>();
 		List<Boolean> intList = new ArrayList<>();
-		
 	}
 	
 }
