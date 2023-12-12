@@ -2,10 +2,12 @@ package com.exapmle.demo_1027.constants;
 
 public enum RtnCode {
 
-	SUCCESSFUL(200, "OK!"),
+	SUCCESSFULL(200, "OK!"),
 	PARAM_ERROR(400,"PARAM_ERROR"),
 	ACCOUNT_EXISTED(400,"Account existed"),
 	INSUFFICIENT_BALANCE(400,"The balance is insufficient"),
+	PLEASE_LOGIN_FIRST(400,"Please login first"),
+	LOGIN_ERROR(400,"Login error!"),
 	ACCOUNT_NOT_FOUND(404,"Account not found"),
 	;
 

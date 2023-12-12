@@ -1,6 +1,6 @@
 package com.example.demo_1027.entity;
 
-public class Bird extends Animal {
+public class Bird extends Animal implements Runnable{
 
 	private TaipeiBank bank;
 	
@@ -33,5 +33,18 @@ public class Bird extends Animal {
 	
 	public void moving() {
 		System.out.println(super.getName() + " 正在移動");
+	}
+
+	@Override
+	public void run() {
+		System.out.println("Bird is running");
+		for (int i = 1; i<=5; i++) {
+			System.out.println(getName()+"目前正在跑第" + i + "圈");
+//			try{
+//				Thread.sleep(500);
+//			}catch (InterruptedException e) {
+//				e.printStackTrace();
+//			}
+		}
 	}
 }

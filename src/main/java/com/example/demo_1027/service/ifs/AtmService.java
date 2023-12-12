@@ -4,6 +4,8 @@ import com.example.demo_1027.vo.AtmResponse;
 
 public interface AtmService {
 	
+	public AtmResponse login(String account,String pwd);
+	
 	public AtmResponse addInfo(String account,String pwd);
 	
 	public AtmResponse getBalanceByAccount(String account , String pwd);
